@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Pseudo Class & Element</title>
+    <style>
+/*
+Specificity Hierarchy
+Every selector has its place in the specificity hierarchy.
+There are four categories which define the specificity level of a selector:
+* Inline styles (1000)
+* IDs (100)
+* Classes, attributes and pseudo-classes (10) - This category includes .classes, [attributes] and pseudo-classes such as :hover, :focus etc.
+* Elements and pseudo-elements (1) - This category includes element names and pseudo-elements, such as h1, div, :before and :after.
+
+A: h1 // The specificity of A is 1 (one element)
+B: #content h1 // The specificity of B is 101 (one ID reference and one element)
+C: <div id="content"><h1 style="color: #ffffff">Heading</h1></div> // The specificity of C is 1000 (inline styling)
+Since 1 < 101 < 1000, the third rule (C) has a greater level of specificity, and therefore will be applied.
+*/
+
+#winning {
+  background-color: red;
+  border: 1px solid black;
+}
+
+/* !important not recommended to use unless absolutely necessary */
+.better {
+  background-color: gray;
+  border: none !important; /* overrides all styles */
+}
+
+p {
+  background-color: blue;
+  color: white;
+  padding: 5px;
+}
+
+/* source order */
+h2 {
+  color: blue;
+}
+
+/* This rule will win over the first one */
+h2 {
+  color: red;
+}
+
+/* specificity: 0002 */
+h3 strong {
+  background-color: khaki;
+  color: green;
+}
+
+/* specificity: 0001 */
+strong {
+  text-decoration: underline;
+  color: red;
+}
+
+body {
+  color: green;
+}
+
+.my-class-1 a {
+  color: inherit;
+}
+
+.my-class-2 a {
+  color: initial;
+}
+
+.my-class-3 a {
+  color: unset;
+}
+
+</style>
+</head>
+<body>
+  
+<p class="better">This is a paragraph.</p> <!-- grey bg, no border, white text, 5px padding-->
+<p class="better" id="winning">One selector to rule them all!</p><!-- red bg, no border, white text, 5px padding-->
+<h2>This is some text.</h2>
+<h3>I'm <strong>important</strong></h3><!-- khaki bg, green text, underlined -->
+
+Some text to be displayed.
+<ul>
+    <li>Default <a href="#">link</a> color</li><!-- browser default -->
+    <li class="my-class-1">Inherit the <a href="#">link</a> color</li><!-- green text, inherit color from parent -->
+    <li class="my-class-2">Reset the <a href="#">link</a> color</li><!-- browser default color --> 
+    <li class="my-class-3">Unset the <a href="#">link</a> color</li><!-- green text, acts like inherit first or initial otheriwise -->  
+</ul>
+</body>
+</html>

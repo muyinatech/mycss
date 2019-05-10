@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Pseudo Class & Element</title>
+    <style>
+        /* These styles will style our link
+   in all states */
+        a {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* pseudo-class examples */
+        /* We want visited links to be the same color
+   as non visited links */
+        a:visited {
+            color: blue;
+        }
+
+        /* We highlight the link when it is
+   hovered over (mouse over), activated (mouse down)
+   or focused (keyboard) (pseudo classes)*/
+        a:hover,
+        a:active,
+        a:focus {
+            color: darkred;
+            text-decoration: none;
+        }
+
+        /* more pseudo classes examples (:)*/
+        li:nth-of-type(even) {
+            background-color: #ccc;
+        }
+
+        li:nth-of-type(odd) {
+            background-color: #eee;
+        }
+
+        /* match any <p> that is the first child of any element */
+        p:first-child {
+            color: blue;
+        }
+
+        /* Match the first <i> element in all <p> elements */
+        p i:first-child {
+            color: blue;
+        }
+
+
+        /* Match all <i> elements in all first child <p> elements */        
+        /* p:first-child i { */
+            /* color: blue; */
+        /* } */
+
+        /* Pseudo element example (::) */
+        /* All elements with an attribute "href" with values
+   starting with "http" will have an arrow added after their
+   content (to indicate they are external links) */
+        /*
+            ::after
+            ::before
+            ::first-letter
+            ::first-line
+            ::selection
+            ::backdrop
+        */
+        [href^=http]::after {
+            content: '⤴';
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://developer.mozilla.org/" target="_blank">Mozilla Developer Network</a>
+
+
+    <ul>
+        <li><a href="#">United Kingdom</a></li>
+        <li><a href="#">Germany</a></li>
+        <li><a href="#">Finland</a></li>
+        <li><a href="#">Russia</a></li>
+        <li><a href="#">Spain</a></li>
+        <li><a href="#">Poland</a></li>
+    </ul>
+
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS">CSS</a> defined in the MDN glossary.</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML">HTML</a> defined in the MDN glossary.</li>
+    </ul>
+
+    <p>This is some text.</p>
+    <p>This is some text.</p>
+    <p>This is some text.</p>
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+
+</body>
+
+</html>

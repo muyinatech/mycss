@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Combinators</title>
+    <style>
+        /* Descendant combinator */
+        div p {
+            background-color: yellow;
+        }
+
+        /* Child combinator (a direct child descendant) */
+        li > span {
+            background-color: red;
+        }
+
+        /* Adjacent sibling combinator 
+         selects all the p elements that are placed immediately after div elements
+        */
+        div + p {
+            background-color: blue;
+        }
+
+        /* General sibling combinator */
+        code ~ div {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <span>
+            <p>Paragraph 3 in the div.</p>
+        </span>
+    </div>
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+
+
+    <ul>
+        <li><span>Item 1</span></li>
+        <li>Item 2</li>
+        <li>
+            <p> <span>Item23</span</p> <!-- not Child but Descendant -->
+        </li>
+    </ul>
+
+    <code>
+        some code
+    </code>
+
+    <div>some text</div>
+    <div>some text</div>
+</body>
+
+</html>

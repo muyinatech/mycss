@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selectors */
+        /* All p elements are red */
+        p {
+            color: red;
+        }
+
+        /* All div elements are blue */
+        div {
+            color: blue;
+        }
+
+        p,
+        div {
+            font-weight: bold
+        }
+
+        /* Class selectors */
+        /* The element with the class "first" is bolded */
+        .first {
+            font-weight: bold;
+        }
+
+
+        /* Id selectors */
+        /* All the elements with the class "done" are strikethrough */
+        .done {
+            text-decoration: line-through;
+        }
+
+        #polite {
+            font-family: cursive;
+        }
+
+        #rude {
+            font-family: monospace;
+            text-transform: uppercase;
+        }
+
+        /* Presence and value attribute selectors */
+
+        /* All elements with the attribute "data-vegetable"
+   are given green text */
+        [data-vegetable] {
+            color: green;
+        }
+
+        /* All elements with the attribute "data-vegetable"
+   with the exact value "liquid" are given a golden
+   background color */
+        [data-vegetable="liquid"] {
+            background-color: goldenrod;
+        }
+
+        /* All elements with the attribute "data-vegetable",
+   containing the value "spicy", even among others,
+   are given a red text color */
+        [data-vegetable~="spicy"] {
+            color: red;
+        }
+
+        /* Substring value attribute selectors*/
+        /* Classic usage for language selection, where lang attribute value starts with "fr"*/
+        [lang|="fr"] {
+            font-weight: bold;
+        }
+
+        /* All elements with the attribute "data-quantity", for which
+   the value starts with "optional" */
+        [data-quantity^="optional"] {
+            opacity: 0.5;
+        }
+
+        /* All elements with the attribute "data-quantity", for which
+   the value ends with "kg" */
+        [data-quantity$="kg"] {
+            font-weight: bold;
+        }
+
+        /* All elements with the attribute "data-vegetable" containing
+   the substring "not spicy" are turned back to green */
+        [data-vegetable*="not spicy"] {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <p>What color do you like?</p>
+    <div>I like blue.</div>
+    <p>I prefer BLACK!</p>
+
+    <ul>
+        <li class="first done">Create an HTML document</li>
+        <li class="second done">Create a CSS style sheet</li>
+        <li class="third">Link them all together</li>
+    </ul>
+
+    <p id="polite"> — "Good morning."</p>
+    <p id="rude"> — "Go away!"</p>
+
+    Ingredients for my recipe: <i lang="fr-FR">Poulet basquaise</i>
+    <ul>
+        <li data-quantity="1kg" data-vegetable>Tomatoes</li>
+        <li data-quantity="3" data-vegetable>Onions</li>
+        <li data-quantity="3" data-vegetable>Garlic</li>
+        <li data-quantity="700g" data-vegetable="not spicy like chili">Red pepper</li>
+        <li data-quantity="2kg" data-meat>Chicken</li>
+        <li data-quantity="optional 150g" data-meat>Bacon bits</li>
+        <li data-quantity="optional 10ml" data-vegetable="liquid">Olive oil</li>
+        <li data-quantity="25cl" data-vegetable="liquid">White wine</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* absolute units (cm, px) not recommended for on screen use */    
+h1 {font-size: 1.5cm;}
+h2 {font-size: 1cm;}
+p {
+  font-size: 0.5cm;
+  line-height: 1cm;
+}
+
+h3 {font-size: 40px;}
+h4 {font-size: 20px;}
+div {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.p2 {
+  font-size: 16px;
+  line-height: 2em; /* relative to font-size, so 2 X 16px = 32px */
+}
+
+.div2 {
+  font-size: 30px;
+  border: 1px solid black;
+}
+
+.span2 {
+  font-size: 0.5em; /* relative to font-size of parent, so 0.5 X 30px = 15px */
+}
+
+html {
+  font-size:16px;
+}
+
+#a-div {
+  font-size: 3rem; /* relative to font-size of the root element, so 3 X 16px = 48px */
+  line-height: 1em;
+  border: 1px solid black;
+}
+
+#top-div {
+  font-size: 2rem;
+  border: 1px solid red;
+  line-height: 1em;
+}
+
+</style>
+</head>
+<body>
+
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+
+<h3>This is heading 1</h3>
+<h4>This is heading 2</h4>
+<div>This is a paragraph.</div>
+<div>This is another paragraph.</div>
+
+<p class="p2">These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
+<p class="p2">These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
+<p class="p2">These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
+<div class=".div2">The font-size of the div element is set to 30px. <span class="span2">The span element inside the div element has a font-size of 0.5em, which equals to 0.5x30 = 15px</span>.</div>
+
+<p>The font-size of this document is 16px.</p>
+
+<div id="top-div">
+The font-size of this div element is 2rem, which translates to 2 x the browser's font size.
+<div id="a-div">The font-size of this div element is 3rem. It also shows that it does not inherit from its parent element font size.</div>
+</div>
+
+<p>The rem unit sets the font-size relative to the browsers base font-size, and will not inherit from its parents.</p>
+</body>
+</html>
