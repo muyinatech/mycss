@@ -76,6 +76,22 @@
         p.big {
             line-height: 1.8;
         }
+
+        p.ex1 {
+                direction: rtl;
+        }
+
+        p.wsp1 {
+            word-spacing: 10px;
+        }
+
+        p.wsp2 {
+            word-spacing: -5px;
+        }
+
+        p.txtshadow {
+            text-shadow: 3px 2px red;
+        }
     </style>
 </head>
 <body>
@@ -99,5 +115,9 @@
 <p class="spacingnegative">This is some text with negative spacing.</p>
 <p class="small">This is text has a small line height.</p>
 <p class="big">This is text has a big line height.</p>
+<p class="ex1"><bdo dir="rtl">This is right-to-left text direction.</bdo></p>
+<p class="wsp1">This is text has word spacing 10px</p>
+<p class="wsp2">This is text has word spacing -5px</p>
+<p class="txtshadow">Text-shadow effect</p>
 </body>
 </html>
