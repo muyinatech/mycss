@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS List</title>
+  <style>
+    ul.a {
+      list-style-type: circle;
+    }
+
+    ul.b {
+      list-style-type: square;
+    }
+
+    ol.c {
+      list-style-type: upper-roman;
+    }
+
+    ol.d {
+      list-style-type: lower-alpha;
+    }
+
+    ul.custom {
+      list-style-image: url('sqpurple.gif');
+    }
+
+    ul.a2 {
+      list-style-position: outside;
+    }
+
+    ul.b2 {
+      list-style-position: inside;
+    }
+
+    ul.none {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul.demo {
+      list-style: square inside url("sqpurple.gif");
+    }
+
+    ol.re {
+      background: #ff9999;
+      padding: 20px;
+    }
+
+    ul.bl {
+      background: #3399ff;
+      padding: 20px;
+    }
+
+    ol.re li {
+      background: #ffe5e5;
+      padding: 5px;
+      margin-left: 35px;
+    }
+
+    ul.bl li {
+      background: #cce5ff;
+      margin: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p>Example of unordered lists:</p>
+  <ul class="a">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+  </ul>
+
+  <ul class="b">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+  </ul>
+
+  <p>Example of ordered lists:</p>
+  <ol class="c">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+  </ol>
+
+  <ol class="d">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+  </ol>
+
+  <ul class="custom">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+  </ul>
+
+  <h2>list-style-position: outside (default):</h2>
+  <ul class="a2">
+    <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant
+    </li>
+    <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia
+      sinensis, an evergreen shrub (bush) native to Asia</li>
+    <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its
+      original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+  </ul>
+
+  <h2>list-style-position: inside:</h2>
+  <ul class="b2">
+    <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant
+    </li>
+    <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia
+      sinensis, an evergreen shrub (bush) native to Asia</li>
+    <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its
+      original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+  </ul>
+
+
+  <ul class="none">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+  </ul>
+
+  <ul class="demo">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+  </ul>
+
+  <ol class="re">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+  </ol>
+
+  <ul class="bl">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+  </ul>
+
+  <ol start="4">
+    <li>Toast pita, leave to cool, then slice down the edge.</li>
+    <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
+    <li>Wash and chop the salad.</li>
+    <li>Fill pita with salad, hummus, and fried halloumi.</li>
+  </ol>
+
+  <ol start="4" reversed>
+    <li>Toast pita, leave to cool, then slice down the edge.</li>
+    <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
+    <li>Wash and chop the salad.</li>
+    <li>Fill pita with salad, hummus, and fried halloumi.</li>
+  </ol>
+
+  <ol>
+    <li value="2">Toast pita, leave to cool, then slice down the edge.</li>
+    <li value="4">Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
+    <li value="6">Wash and chop the salad.</li>
+    <li value="8">Fill pita with salad, hummus, and fried halloumi.</li>
+  </ol>
+
+</body>
+
+</html>
