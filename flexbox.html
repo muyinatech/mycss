@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Flexbox</title>
+  <style>
+    .flex-container {
+      display: flex;
+      background-color: maroon;
+    }
+
+    .flex-container>div {
+      background-color: wheat;
+      margin: 15px;
+      padding: 25px;
+    }
+
+    /* flex-direction (column) */
+    .flex-container2 {
+      display: flex;
+      flex-direction: column;
+      background-color: rebeccapurple;
+    }
+
+    .flex-container2>div {
+      background-color: papayawhip;
+      margin: 15px;
+      padding: 25px;
+    }
+
+    /* flex-direction (column-reverse) */
+    .flex-container3 {
+      display: flex;
+      flex-direction: column-reverse;
+      background-color: gold;
+    }
+
+    .flex-container3>div {
+      background-color: ghostwhite;
+      margin: 15px;
+      padding: 25px;
+    }
+
+    /* flex-direction (row) */
+    .flex-container4 {
+      display: flex;
+      flex-direction: row;
+      background-color: darkblue;
+    }
+
+    .flex-container4>div {
+      background-color: cornsilk;
+      margin: 15px;
+      padding: 25px;
+    }
+
+    /* flex-direction (row-reverse) */
+    .flex-container5 {
+      display: flex;
+      flex-direction: row-reverse;
+      background-color: teal;
+    }
+
+    .flex-container5>div {
+      background-color: honeydew;
+      margin: 15px;
+      padding: 25px;
+    }
+
+    /* flex-wrap (wrap) */
+    .flex-container6 {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: violet;
+    }
+
+    .flex-container6>div {
+      background-color: lavender;
+      margin: 15px;
+      padding: 25px;
+    }
+
+    /* flex-wrap (no-wrap) */
+    .flex-container7 {
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: rgb(28, 18, 83);
+    }
+
+    .flex-container7>div {
+      background-color: ivory;
+      margin: 15px;
+      padding: 25px;
+    }
+
+    /* flex-wrap (wrap-reverse) */
+    .flex-container8 {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      background-color: rgb(145, 140, 175);
+    }
+
+    .flex-container8>div {
+      background-color: whitesmoke;
+      margin: 15px;
+      padding: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS Flexbox</h1>
+  <!--
+    A Flexible Layout must have a parent element with the display property set to 'flex'.
+    Direct child elements(s) of the flexible container automatically becomes flexible items.
+  -->
+
+  <!-- Flex container with four flex items-->
+  <p>flex</p>
+  <div class="flex-container">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+  </div>
+
+  <p>flex-direction - column</p>
+  <div class="flex-container2">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+  </div>
+
+  <p>flex-direction - reverse</p>
+  <div class="flex-container3">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+  </div>
+
+  <p>flex-direction - row</p>
+  <div class="flex-container4">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+  </div>
+
+  <p>flex-direction - row-reverse</p>
+  <div class="flex-container5">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+  </div>
+
+  <p>flex-wrap - wrap</p>
+  <div class="flex-container6">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+  </div>
+
+  <p>flex-wrap - nowrap</p>
+  <div class="flex-container7">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+  </div>
+
+  <p>flex-wrap - wrap-reverse</p>
+  <div class="flex-container8">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+  </div>
+
+</body>
+
+</html>
