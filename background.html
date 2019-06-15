@@ -6,59 +6,66 @@
     <title>CSS Background</title>
     <style>
         body {
-            background-color: #ff33cc;
+            background-image: url("images/Austria.JPG");
+            /* 
+            repeat horizontally or vertically or no repeat
+            background-repeat: repeat-x;
+            background-repeat: repeat-y; 
+            background-repeat: no-repeat;
+            */
         }
 
-        h1 {
-            background-color: lightblue;
+        h2 {
+            background-color: cornsilk;
         }
 
         #example1 {
-            border: 10px dotted black;
+            border: 10px dashed black;
             padding: 15px;
             background: lightblue;
             background-clip: border-box;
         }
 
         #example2 {
-            border: 10px dotted black;
+            border: 10px dashed black;
             padding: 15px;
             background: lightblue;
             background-clip: padding-box;
         }
 
         #example3 {
-            border: 10px dotted black;
+            border: 10px dashed black;
             padding: 15px;
             background: lightblue;
             background-clip: content-box;
         }
+
+
+
     </style>
 </head>
 
 <body>
-    Test
-    <h1>heading 1</h1>
+    <h1>CSS Background</h1>
 
-    <p>The background-clip property defines how far the background should extend within an element.</p>
+    <h2>This is heading has a cornsilk background color</h2>
 
-    <p>background-clip: border-box (this is default):</p>
+    <!-- The background-clip property defines how far the background should extend within an element. -->
+
+    <p>background-clip: border-box (default)</p>
     <div id="example1">
         <p>The background extends behind the border.</p>
     </div>
 
-    <p>background-clip: padding-box:</p>
+    <p>background-clip: padding-box</p>
     <div id="example2">
         <p>The background extends to the inside edge of the border.</p>
     </div>
 
-    <p>background-clip: content-box:</p>
+    <p>background-clip: content-box</p>
     <div id="example3">
         <p>The background extends to the edge of the content box.</p>
     </div>
-
-    <p><strong>Note:</strong> The background-clip property is not supported in Internet Explorer 8 and earlier versions.
-    </p>
 </body>
 
 </html>

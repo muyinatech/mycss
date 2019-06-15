@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>CSS Flexbox</title>
+  <title>CSS flex-direction</title>
   <style>
     .flex-container {
       display: flex;
@@ -66,50 +66,11 @@
       margin: 15px;
       padding: 25px;
     }
-
-    /* flex-wrap (wrap) */
-    .flex-container6 {
-      display: flex;
-      flex-wrap: wrap;
-      background-color: violet;
-    }
-
-    .flex-container6>div {
-      background-color: lavender;
-      margin: 15px;
-      padding: 25px;
-    }
-
-    /* flex-wrap (no-wrap) */
-    .flex-container7 {
-      display: flex;
-      flex-wrap: nowrap;
-      background-color: rgb(28, 18, 83);
-    }
-
-    .flex-container7>div {
-      background-color: ivory;
-      margin: 15px;
-      padding: 25px;
-    }
-
-    /* flex-wrap (wrap-reverse) */
-    .flex-container8 {
-      display: flex;
-      flex-wrap: wrap-reverse;
-      background-color: rgb(145, 140, 175);
-    }
-
-    .flex-container8>div {
-      background-color: whitesmoke;
-      margin: 15px;
-      padding: 25px;
-    }
   </style>
 </head>
 
 <body>
-  <h1>CSS Flexbox</h1>
+  <h1>CSS flex-direction</h1>
   <!--
     A Flexible Layout must have a parent element with the display property set to 'flex'.
     Direct child elements(s) of the flexible container automatically becomes flexible items.
@@ -132,7 +93,7 @@
     <div>Four</div>
   </div>
 
-  <p>flex-direction - reverse</p>
+  <p>flex-direction - column-reverse</p>
   <div class="flex-container3">
     <div>One</div>
     <div>Two</div>
@@ -154,48 +115,6 @@
     <div>Two</div>
     <div>Three</div>
     <div>Four</div>
-  </div>
-
-  <p>flex-wrap - wrap</p>
-  <div class="flex-container6">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-    <div>9</div>
-    <div>10</div>
-  </div>
-
-  <p>flex-wrap - nowrap</p>
-  <div class="flex-container7">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-    <div>9</div>
-    <div>10</div>
-  </div>
-
-  <p>flex-wrap - wrap-reverse</p>
-  <div class="flex-container8">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-    <div>9</div>
-    <div>10</div>
   </div>
 
 </body>

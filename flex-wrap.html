@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS flex-wrap</title>
+  <style>
+    /* flex-wrap (wrap) */
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: violet;
+    }
+
+    .flex-container>div {
+      background-color: lavender;
+      margin: 15px;
+      padding: 25px;
+    }
+
+    /* flex-wrap (no-wrap) */
+    .flex-container2 {
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: rgb(28, 18, 83);
+    }
+
+    .flex-container2>div {
+      background-color: ivory;
+      margin: 15px;
+      padding: 25px;
+    }
+
+    /* flex-wrap (wrap-reverse) */
+    .flex-container3 {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      background-color: rgb(145, 140, 175);
+    }
+
+    .flex-container3>div {
+      background-color: whitesmoke;
+      margin: 15px;
+      padding: 25px;
+    }
+
+    /* flex-flow (row wrap)  shorthand for flex-direction & flex-wrap */
+    .flex-container4 {
+      display: flex;
+      flex-flow: row wrap;
+      background-color: DodgerBlue
+    }
+
+    .flex-container4>div {
+      background-color: #f1f1f1;
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS flex-wrap</h1>
+  <p>flex-wrap - wrap</p>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+  </div>
+
+  <p>flex-wrap - nowrap</p>
+  <div class="flex-container2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+  </div>
+
+  <p>flex-wrap - wrap-reverse</p>
+  <div class="flex-container3">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+  </div>
+
+  <p>flex-flow - row wrap</p>
+  <div class="flex-container4">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+  </div>
+
+</body>
+
+</html>
